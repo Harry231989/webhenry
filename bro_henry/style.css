@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('menu22.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url('close2.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black-white;
+  mix-blend-mode: overlay;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-20px);
+}
+
+.menu-index {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-index ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu-index ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu-index ul li a:hover {
+  color: crimson;
+}
+
+@media (max-width: 798px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 1.5em;
+  }
+
+  .text h3 {
+    font-size: 1em;
+  }
+}
+
+.booking {
+  margin: 0;
+  padding: 0;
+  background: url(hair.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.booking-form-box {
+  max-width: 350px;
+  border: 1px solid #ced4da;
+  margin: 10% auto 0;
+}
+.radio-btn {
+  margin: 0 20px;
+}
+.radio-btn .btn {
+  margin: 20px 10px 20px 0;
+  box-shadow: none;
+}
+
+.booking h1 {
+  color: #fff;
+}
+
+.booking-form {
+  padding: 0 20px 20px;
+}
+.booking-form label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff !important;
+}
+.input-grp {
+  width: 152px;
+  display: inline-block;
+}
+.form-control {
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select-date::-webkit-calender-picker-indicator {
+  background: transparent !important;
+}
+.custom-select {
+  color: #fff !important;
+  font-size: 12px !important;
+  border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+.custom-select option {
+  color: #333;
+}
+.shave {
+  width: 100%;
+  padding: 9px 0 !important;
+  font-size: 12px !important;
+  border: 1px solid #ced4da !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.shave:hover {
+  background: transparent !important;
+  color: crimson !important;
+  transition: 0.5s;
+}
+
+.menu-booking ul {
+  position: relative;
+  list-style: none;
+  text-align: right;
+}
+
+.menu-booking ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+.menu-booking ul li a:hover {
+  color: crimson;
+}
+.login {
+  margin: 0;
+  padding: 0;
+  background: url(sets.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.loginbox {
+  width: 420px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.logo1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type='text'],
+input[type='password'] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.loginbox input[type='submit'] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox input[type='submit']:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.loginbox a:hover {
+  color: #ffc107;
+}
+
+.menu-login ul {
+  position: relative;
+  list-style: none;
+  text-align: right;
+}
+
+.menu-login ul li a {
+  font-size: 30px;
+  color: crimson;
+  display: inline-block;
+}
+
+.menu-login ul li a:hover {
+  color: black;
+}
+
+.about-section {
+  background: url(newback.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 35px;
+}
+
+.inner-container h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text2 {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.works {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 60px;
+  }
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  background: url(newww.png);
+  background-size: cover;
+}
+.menu-contact ul li a {
+  font-size: 30px;
+  color: crimson;
+  display: inline-block;
+}
+.menu-contact ul li a:hover {
+  color: black;
+}
+
+.contact-form1 {
+  width: 85%;
+  max-width: 600px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form h1 {
+  margin-top: 0;
+  font-weight: 200;
+}
+.txtb {
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.btn {
+  display: inline-block;
+  background: #9b59b6;
+  padding: 15px 0;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
